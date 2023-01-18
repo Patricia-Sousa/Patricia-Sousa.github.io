@@ -1,0 +1,35 @@
+body {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+html::-webkit-scrollbar {
+    width: 15px;
+}
+
+html::-webkit-scrollbar-track {
+    --bs-bg-opacity: 1;
+    background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 25px;
+    border: 1px solid rgb(201, 200, 200);
+}
+
+.centrar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+.autobiografia,
+.curriculo,
+.pra,
+.portefolio,
+.contato {
+    margin: 20px 20px 20px 20px;
+}

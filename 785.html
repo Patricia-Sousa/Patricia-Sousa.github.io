@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <title>Portefólio.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="scrollbar">
+        <div class="force-overflow"></div>
+    </div>
+
+    <div class="portefolio">
+        <div class="card">
+            <div class="card-body">
+                <p class="fs-1">UFCD 785</p>
+                <p class="fs-2">Programação em C/C++ - Formas Complexas</p>
+                <p class="fs-5">Formador: Bruno Silva</p>
+                <p class="fs-3">Objetivos</p>
+                <p class="fs-5">Reconhecer as formas mais complexas de programação em C/C++.</p>
+                <p class="fs-3">Reflexão</p>
+                <p class="fs-5">Esta UFCD foi constituída por três grandes componentes: ficheiros em C, impressão de carateres por acesso direto à memória em C e macros e pré-processamento.</p>
+                <p class="fs-5">Em ficheiros, vimos que existem dois tipos de ficheiros: os ficheiros de texto e os ficheiros binários. Um ficheiro de texto está estruturado como uma sequência de linhas com caracteres do alfabeto, números, caracteres especiais, etc.
+                    Os ficheiros são utilizados para guardar dados mesmo depois do programa ter terminado.</p>
+                <p class="fs-5">Manipular ficheiros em C, envolve três fases: abrir o ficheiro e assim prepará-lo para a leitura e a escrita; ler o ficheiro e/ou escrever do/no ficheiro e fechar o ficheiro. Para trabalhar com um ficheiro em C temos que utilizar um ponteiro
+                    do ficheiro, que irá deixar o programa acompanhar o ficheiro que se está a abrir.</p>
+                <p class="fs-5">FILE *f;</p>
+                <p class="fs-5">f = open("nome_do_ficheiro.txt", "modo_de_acesso_ao_ficheiro");</p>
+                <p class="fs-5">Um ficheiro pode ser aberto de várias maneiras: leitura, escrita, leitura/escrita, acrescentar informação, etc. A função utilizada para abrir o ficheiro é a fopen(). Para escrever informações proveniente dos ficheiros, podemos usar as
+                    funções - fputs() e fprintf(); para ler, podemos usar as funções - fgetc(), fgets() e fscanf(). Para fechar um ficheiro previamente aberto ou vários, deve-se usar, respetivamente, as funções - fclose() e fcloseall(). Sobre ficheiros
+                    ainda foi abordado, o acesso à informação nos ficheiros, que pode ser sequencial ou direto e as funções fseek(), ftell() e rewind().</p>
+                <p class="fs-5">Dando continuidade à UFCD, faço uma introdução à segunda componente com a seguinte fonte: “Os computadores são sistemas eletrónicos, com base em tensões elétricas mas com valores discretos. Usam apenas dois valores básicos, numa base binária
+                    (normalmente, a ausência de tensão elétrica designa-se 0 e a presença dessa tensão designa-se 1).”</p>
+                <p class="fs-5">A medida interna da informação num computador é o bit e este pode então ter dois estados - o 0 e o 1. Vimos como representamos os números dentro de um byte, através da base binária (base 2), da base octal (base8) e da base hexadecimal
+                    (base 16). E vimos que a base que menos se adapta à computação é a base decimal (base 10), aquela que utilizamos no dia-à-dia. Fizemos ainda a conversão entre bases e como a linguagem C permite o acesso ao nível do bit, podemos utilizar
+                    operações e operadores.</p>
+                <p class="fs-5">Por último abordámos as macros e o pré-processador. A macro é um pedaço de código que é substituído pelo pré-processador, antes de o compilador executar o código do programa. O pré-processador, trata das instruções ou diretivas do pré-processamento
+                    e essas instruções são precedidas com o caracter especial #. Desta forma, o processo de compilação de um programa em C, ocorre primeiro pela fase do pré-processamento e depois pela compilação.</p>
+                <p class="fs-5">Realizámos para a avaliação, três trabalhos práticos e demos por concluídas as UFCDs referentes à linguagem C.</p>
+                <p class="fs-5">A linguagem C foi criada em 1972 e tinha por finalidade permitir a escrita de um sistema operativo, evitando assim o uso da linguagem Assembly. É uma linguagem de alto nível, considerada extremamente potente e flexível. É uma linguagem
+                    internacionalmente conhecida e utilizada, com muita documentação associada, no entanto, com o desenvolvimento de novas tecnologias, criaram-se muitas linguagens de programação que acompanham esse desenvolvimento. Com isto quero dizer,
+                    que apesar da linguagem C, ser uma excelente ferramenta de aprendizagem, ela não pode ser a única que se aprende, porque o mundo da programação é muito mais vasto.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fix-bottom">
+        <div class="col mx-auto text-center">
+            <a href="pra.html"><img src="icon2.png" alt="icon" width="40" height="40"></img>
+            </a>
+        </div>
+    </div>
+
+    <div class="p-1 mb-1"></div>
+
+</body>
+
+</html>
