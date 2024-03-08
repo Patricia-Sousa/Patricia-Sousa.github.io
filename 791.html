@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="PT-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patrícia Sousa">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Portefólio.">
+    <title>Portefólio.</title>
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="scrollbar">
+        <div class="force-overflow"></div>
+    </div>
+
+    <div class="portefolio">
+        <div class="card">
+            <div class="card-body">
+                <p class="fs-1">UFCD 791</p>
+                <p class="fs-2">Programação em JAVA - Avançada</p>
+                <p class="fs-5">Formador: Bruno Silva</p>
+                <p class="fs-3">Objetivos</p>
+                <p class="fs-5">Reconhecer as estruturas complexas da programação em JAVA.</p>
+                <p class="fs-3">Reflexão</p>
+                <p class="fs-5">Esta UFCD foi constituída por duas partes: na primeira parte, demos continuidade à programação em JAVA e na segunda parte, introduzimos a linguagem SQL (Structured Query Language).</p>
+                <p class="fs-5">Parte I</p>
+                <p class="fs-5">Nesta primeira parte, demos seguimento à programação em JAVA, baseada em 4 temas principais: ficheiros, arrays, coleções e strings.</p>
+                <p class="fs-5">Um ficheiro é um dado isolado com um nome e um caminho de ficheiro único no sistema de ficheiros. O ficheiro tem um cabeçalho e um conteúdo. O cabeçalho, tem dados sobre o ficheiro, como o tamanho, o tipo, as permissões, últimas modificações,
+                    etc. A parte do conteúdo tem efetivamente o conteúdo desse ficheiro. Em JAVA, os ficheiros e os diretórios são representados com um ficheiro objeto. O tratamento de ficheiros em JAVA implica a leitura e a escrita de dados num ficheiro.
+                    A classe File do pacote java.io, permite-nos trabalhar com diferentes formatos de ficheiros. Durante a leitura de um ficheiro, vários erros podem ocorrer: o ficheiro a ser lido pode não existir ou o ficheiro pode estar corrompido.
+                    Qualquer um destes pontos pode causar um erro de entrada e saída (IOException). Antes de se proceder à escrita no ficheiro, é necessário criar um output stream e fazer a sua conexão com o ficheiro. Para escrever num ficheiro de texto
+                    utilizámos a estrutura hierárquica da classe Writer. Na leitura de caracteres a partir de um ficheiro, é necessário criar um input stream e fazer a sua conexão ao ficheiro. Apesar de ser possível efetuar a leitura de ficheiros de texto
+                    apenas com a classe FileReader, a classe BufferedReader aumenta a eficiência e oferece métodos mais avançados para a leitura de ficheiros de texto.</p>
+                <p class="fs-5">O JAVA I/O fornece o conceito de streams, que basicamente representa um fluxo contínuo de dados, onde estes podem ser passados via byte ou caracter.</p>
+                <p class="fs-5">Um array é um objeto que contém um número fixo de valores de um único tipo. O comprimento de um array é estabelecido quando o array é criado. Após a sua criação, o seu comprimento é fixo. Os arrays podem ser classificados como vetores
+                    ou matrizes.</p>
+                <p class="fs-5">Vimos também a estrutura de repetição ForEach, que permite percorrer todos os elementos num array:</p>
+                <p class="fs-5">for( [1] [2] : [3] ) {</p>
+                <p class="fs-5">...</p>
+                <p class="fs-5">}</p>
+                <p class="fs-5">[1] - Tipo de dados; [2] - Nome da variável que contém o valor de cada elemento; [3] - Array a percorrer.</p>
+                <p class="fs-5">As coleções em JAVA são soluções para todos os trabalhos de manipulação de dados, tais como o armazenamento, a pesquisa, a classificação, a inserção, a eliminação e a atualização de dados. As coleções em JAVA respondem como um único objeto
+                    e uma collection framework é um conjunto de classes e interfaces que fornecem uma arquitetura pronta a ser criada. Dentro das classes mais utilizadas, abordámos a classe ArrayList. Ela funciona como um array e é eficiente para aceder
+                    a elementos de forma sequencial. Também implementámos alguns métodos desta classe.</p>
+                <p class="fs-5">Por último vimos a classe String e alguns métodos de manipulação, nomeadamente: lenght() - que retorna um inteiro com o número de caracteres da string.</p>
+                <p class="fs-5">Para a avaliação, realizámos um trabalho prático.</p>
+                <p class="fs-5">Parte II</p>
+                <p class="fs-5">Nesta segunda parte, instalámos o software Xampp. O X significa Cross-Platform, A significa Apache, M significa MYSQL e o P significa PHP e Perl, respetivamente. É um pacote de soluções web open-source e deste modo, é um servidor web multiplaforma
+                    que permite aos programadores escrever e testar o seu código num servidor web local. Com este software acedemos ao phpMyAdmin, que é uma ferramenta de software livre escrita em PHP, destinada a lidar com a administração do MySQL através
+                    da Web.</p>
+                <p class="fs-5">O SQL é fundamentalmente uma linguagem de programação concebida para o acesso, a modificação e a extração de informação de bases de dados relacionais. Os comandos SQL estão divididos em vários tipos: Data Definition Language (DDL), Data
+                    Manipulation Language (DML), Data Query Language, agrupado com os comandos DDL, Data Control Language e Transaction Control Language.</p>
+                <p class="fs-5">DDL ou Linguagem de Definição de Dados é um conjunto de comandos SQL utilizados para criar, modificar e eliminar estruturas de base de dados, mas não os dados. Os comandos SQL que tratam da manipulação de dados presentes na base de dados
+                    pertencem à DML ou Linguagem de Manipulação de Dados e isto inclui a maioria das instruções SQL. É a componente da instrução SQL que controla o acesso aos dados e à base de dados.</p>
+                <p class="fs-5">Vimos as quatro operações básicas que podemos fazer numa base de dados: inserir novo registo, atualizar registo, consultar registo e excluir registo. Revemos os operadores aritméticos e os operadores lógicos e foram introduzidos os operadores
+                    SQL e as funções de agregação.</p>
+                <p class="fs-5">Realizámos vários exercícios e um trabalho prático para a avaliação. </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fix-bottom">
+        <div class="col mx-auto text-center">
+            <a href="pra.html"><img src="icon2.png" alt="icon" width="40" height="40"></img>
+            </a>
+        </div>
+    </div>
+
+    <div class="p-1 mb-1"></div>
+
+</body>
+
+</html>

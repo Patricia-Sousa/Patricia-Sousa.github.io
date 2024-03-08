@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="PT-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patrícia Sousa">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Portefólio.">
+    <title>Portefólio.</title>
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="scrollbar">
+        <div class="force-overflow"></div>
+    </div>
+
+    <div class="portefolio">
+        <div class="card">
+            <div class="card-body">
+                <p class="fs-1">UFCD 789</p>
+                <p class="fs-2">Fundamentos da Linguagem JAVA</p>
+                <p class="fs-5">Formador: Bruno Silva</p>
+                <p class="fs-3">Objetivos</p>
+                <p class="fs-5">Reconhecer os princípios fundamentais da linguagem de programação orientada por objetos.</p>
+                <p class="fs-3">Reflexão</p>
+                <p class="fs-5">O JAVA é um tipo de linguagem de programação de alto nível que pode ser compilada e interpretada. O compilador JAVA, responsabiliza-se pelo código-fonte do JAVA, transformando-o em bytecode (código de nível intermediário). O bytecode é
+                    um código de uma máquina virtual, chamada de Máquina Virtual Java (JVM), idealizada pelos criadores da linguagem.</p>
+                <p class="fs-5">JAVA é uma linguagem voltada para a programação orientada a objetos e a programação orientada a objetos surgiu como uma alternativa às características da programação estruturada. Esta última, é composta por três tipos básicos de estruturas:
+                    sequências (comandos a serem executados), condições (sequências que só devem ser executadas se uma condição for satisfeita) e repetições (sequências que devem ser executadas repetitivamente até que uma condição seja satisfeita).</p>
+                <p class="fs-5">A linguagem JAVA baseia-se em dois conceitos-chave: classes e objetos. Destes dois conceitos, derivam alguns outros conceitos, extremamente importantes ao paradigma da programação orientada a objetos. Os conceitos em questão, são o encapsulamento,
+                    a herança, o polimorfismo e as interfaces. O JAVA preserva os conceitos elementares, como as variáveis e os tipos de dados.</p>
+                <p class="fs-5">Desde o lançamento do JAVA em 1996, várias empresas têm desenvolvido ambientes integrados de desenvolvimento, que agilizam a construção dos programas em JAVA. Nesta UFCD, utilizámos o Eclipse.</p>
+                <p class="fs-5">O Eclipse é definido como um IDE (Integrated Development Environment) de código aberto utilizado para o desenvolvimento da linguagem JAVA, mas também é multilinguagem.</p>
+                <p class="fs-5">Dentro das nomenclaturas em JAVA, foi visto o que é um workspace, um projeto, um pacote (package), uma classe, um método, a sintaxe e as palavras reservadas.</p>
+                <p class="fs-5">O método principal (main) é aquele que inicia a execução do aplicativo JAVA. É o método que mostra o resultado do que foi codificado. Quando solicitamos ao interpretador que execute uma determinada classe compilada, ele procura este método
+                    e se ele não existir será gerada uma exceção a informar que o método não foi encontrado. A máquina virtual JAVA só irá identificar este método se ele for público (public), estático (static), não retornar nenhum valor (void), o nome
+                    deve ser main e deve receber como parâmetro um array de string.</p>
+                <p class="fs-5">public static void main (String[] args {</p>
+                <p class="fs-5">}</p>
+                <p class="fs-5">Esta linguagem está organizada por classes e estas estão organizadas por packages. Uma classe é um conceito que define uma estrutura para a criação de um objeto. Ela define um objeto com base nas suas propriedades (os campos ou as variáveis)
+                    e as suas ações ou métodos que definem o seu comportamento (funções).</p>
+                <p class="fs-5">Para a construção de uma classe é necessário definir as variáveis de instância, criar o construtor sem parâmetros, o construtor com parâmetros e os métodos de instância. A uma classe podem ser atribuídos modificadores de acesso, como um
+                    encapsulamento da informação sensível; ela pode ter um estado público (public), protegido (protected) ou privado (private).</p>
+                <p class="fs-5">Uma classe pode tornar-se numa superclasse e a partir daí podem criar-se classes que herdam os atributos e os métodos desta. Mas tudo o que é privado nunca é herdado.</p>
+                <p class="fs-5">Dentro das classes, também vimos o que é uma classe abstrata, sendo que esta é declarada por uma palavra concreta, abstract, servindo de modelo para as outras, como uma classe base. Ela não pode ser instanciada diretamente.</p>
+                <p class="fs-5">Desenvolvemos e implementámos: o polimorfismo e a interface. O polimorfismo é a capacidade dos objetos de uma classe para dar uma resposta diferente e independente, dependendo dos parâmetros (diferentes implementações) utilizados durante
+                    a sua invocação. A interface tem por objetivo criar, como o próprio nome indica, uma interface (“contrato”) que deverá ser obedecido, como se fosse uma regra, nas classes onde for implementada. Os métodos criados na interface não têm
+                    corpo, apenas assinatura, ou seja, o cabeçalho.</p>
+                <p class="fs-5">Por último, foi abordado a exceção, como um evento excecional, ou seja, um acontecimento que ocorre durante a execução do programa e isto é algo que é indesejado, pois pode terminar o programa e levar à perda de trabalho. Mas será possível
+                    evitar um evento excecional?</p>
+                <p class="fs-5">O JAVA tem um mecanismo de exceções, que contribui para a criação de programas robustos, permitindo aos programas em eventos excecionais evitarem a terminação abrupta e notificar se a execução normal é recuperável. Se sim, deve continuar
+                    a execução normal, se não, deve possibilitar que se armazene o trabalho e que se termine o programa de forma normal. Este mecanismo facilita a captura e o tratamento de exceções e o lançamento das mesmas. Aqui, também é necessário
+                    diferenciar o erro da exceção, porque o erro é causado por um erro dentro da JVM (exemplo: memória cheia) e a exceção é causada fora da JVM (exemplo: divisão por zero).</p>
+                <p class="fs-5">Para tratar as exceções em JAVA são utilizados os comandos try e catch (e o finally como opcional). Neste bloco são introduzidas todas as linhas de código que podem vir a lançar uma exceção.</p>
+                <p class="fs-5">Para a avaliação desta UFCD realizámos 2 trabalhos práticos. Considero que adquiri os fundamentos da linguagem JAVA apresentados nesta UFCD.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fix-bottom">
+        <div class="col mx-auto text-center">
+            <a href="pra.html"><img src="icon2.png" alt="icon" width="40" height="40"></img>
+            </a>
+        </div>
+    </div>
+
+    <div class="p-1 mb-1"></div>
+
+</body>
+
+</html>

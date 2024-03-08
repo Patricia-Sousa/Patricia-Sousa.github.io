@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="PT-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Patrícia Sousa">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="description" content="Portefólio.">
+    <title>Portefólio.</title>
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="scrollbar">
+        <div class="force-overflow"></div>
+    </div>
+
+    <div class="portefolio">
+        <div class="card">
+            <div class="card-body">
+                <p class="fs-1">UFCD 788</p>
+                <p class="fs-2">Instalação e Administração de Servidores WEB</p>
+                <p class="fs-5">Formador: Ricardo Páscoa</p>
+                <p class="fs-3">Objetivos</p>
+                <p class="fs-5">Planear, instalar e gerir um servidor intranet e Internet em ambiente web.</p>
+                <p class="fs-3">Reflexão</p>
+                <p class="fs-5">Um servidor é um computador equipado com um ou mais processadores, memória, portas de comunicação, softwares e um sistema para armazenamento de dados. O termo servidor também define um recurso dentro de um sistema computacional maior,
+                    capaz de processar aplicações, prestar serviços e armazenar dados. Estes sistemas podem ser físicos ou virtuais e podem estar instalados local ou remotamente. Pode-se considerar um servidor como qualquer solução tecnológica com capacidade
+                    para executar programas de forma centralizada.</p>
+                <p class="fs-5">Esta UFCD centrou-se na instalação, configuração e administração de servidores Web.</p>
+                <p class="fs-5">Um servidor Web é um recurso de software, com a sua componente lógica associada à disponibilização de acesso, via internet, a um determinado website ou aplicação web. É o servidor Web que processa solicitações via HTTP, o protocolo de
+                    transferência de hipertexto. O servidor Web desempenha o papel de servidor num modelo cliente-servidor.</p>
+                <p class="fs-5">O servidor Web explorado ao longo das aulas foi o Apache. O Apache é um servidor Web muito popular, que permite que a máquina onde está instalado guarde documentos e informação para posteriormente serem disponibilizados noutras máquinas
+                    que façam os respetivos pedidos de acesso através do protocolo HTTP.</p>
+                <p class="fs-5">O Apache pode ser instalado no Windows ou no Linux, porque ele é multiplataforma. A sua utilização mais conhecida é a combinação com a linguagem PHP e a base de dados MySQL.</p>
+                <p class="fs-5">O PHP é uma linguagem de scripting “embebida” dentro do HTML, muito utilizada e com capacidades para o desenvolvimento de aplicações web. O objetivo principal desta linguagem é permitir aos programadores que de uma forma rápida e prática
+                    possam ser criadas dinamicamente páginas web, através do acesso a informação contida em bases de dados. O PHP corre no servidor, ou seja, a máquina do utilizador não executa qualquer processamento, apenas recebe e mostra o resultado
+                    do script processado pelo servidor, o qual acaba por devolver, ao cliente que faz o pedido da consulta a uma página web, um documento HTML que resultou de substituir os comandos PHP pelo seu resultado. O MySQL é um sistema de gestão
+                    de bases de dados relacional onde é armazenada um conjunto de informação estruturada. Tal como outras bases de dados relacionais, o MySQL armazena dados em tabelas compostas por linhas e colunas. Os utilizadores podem definir, manipular,
+                    controlar e consultar dados usando o SQL (Structured Query Language).</p>
+                <p class="fs-5">Por padrão, os ficheiros de configuração do Apache encontram-se no diretório apache: conf httpd.conf. O ficheiro de configuração principal do Apache, possui diretivas que controlam a operação do servidor. O httpd.conf tem a tarefa de indicar
+                    os recursos que o Apache precisa. O httpd responde por padrão na porta 80. Para que o Apache possa correr o PHP como um módulo, o ficheiro .conf precisa de ser modificado. Para a instalação e configuração do Apache e do PHP fizemos
+                    os seguintes procedimentos:</p>
+                <p class="fs-4">Instalação e configuração do Apache:</p>
+                <p class="fs-5">1. Verificar a disponibilidade da porta 80, aquela que permite a transmissão de dados em texto simples. Através da linha de comandos digitar o comando:</p>
+                <p class="fs-5">netstat -anb | findstr localhost:80</p>
+                <p class="fs-5">2. Colocar na raiz do disco a pasta com os ficheiros do Apache.</p>
+                <p class="fs-5">3. Instalar as bibliotecas do C/C++.</p>
+                <p class="fs-5">4. Abrir o ficheiro httpd.conf e alterar o server name:</p>
+                <p class="fs-5">ServerName localhost:80</p>
+                <p class="fs-5">5. Instalar o Apache como um serviço através da linha de comandos:</p>
+                <p class="fs-5">httpd.exe -k install</p>
+                <p class="fs-4">Configurações essenciais para o PHP:</p>
+                <p class="fs-5">1. Colocar na raiz do disco a pasta com os ficheiros do PHP.</p>
+                <p class="fs-5">2. Localizar e abrir o ficheiro php.ini. Este é o ficheiro padrão de configuração do PHP, sempre que o PHP é inicializado, este ficheiro é lido pelo sistema.</p>
+                <p class="fs-5">3. Habilitar as extensões:</p>
+                <p class="fs-5">extension = curl</p>
+                <p class="fs-5">extension = gd</p>
+                <p class="fs-5">extension = mbstring</p>
+                <p class="fs-5">extension = openssl</p>
+                <p class="fs-5">extension = pdo_mysql</p>
+                <p class="fs-5">4. Colocar uma pasta para os ficheiros temporários, nas aulas usámos a pasta dos ficheiros temporários do Windows:</p>
+                <p class="fs-5">session.save_path = “C:\Windows\temp”</p>
+                <p class="fs-5">5. Gerar relatório de erros:</p>
+                <p class="fs-5">error_reporting = E_ALL&~E_DEPRECATED&~E_STRICT</p>
+                <p class="fs-5">6. Habilitar a extensão dir, que diz ao PHP onde se encontram a suas extensões carregáveis:</p>
+                <p class="fs-5">extension_dir = “ext”</p>
+                <p class="fs-5">7. Voltar ao httpd.conf do Apache para fazer as restantes configurações.</p>
+                <p class="fs-5">8. Acrescentar o addHandler, addType e o action:</p>
+                <p class="fs-5">AddHandler application/x-httpd-php .php</p>
+                <p class="fs-5">AddType application/x-httpd-php .php .html</p>
+                <p class="fs-5">Action application/x-httpd-php “C:\php\php-cgi.exe”</p>
+                <p class="fs-5">9. Adicionar módulo:</p>
+                <p class="fs-5">LoadModule php_module “C:\php\php8apache2_4.dll”</p>
+                <p class="fs-5">10. Adicionar o directory index:</p>
+                <p class="fs-5">DirectoryIndex index.html index.php</p>
+                <p class="fs-5">11. No final do ficheiro colocar:</p>
+                <p class="fs-5">PHPIni dir “C:\php”</p>
+                <p class="fs-5">timeout 240</p>
+                <p class="fs-5">Todos estes comandos e instruções foram testados e explicados na configuração que cada um de nós fez nos seus computadores, durante as aulas.</p>
+                <p class="fs-5">Para a avaliação realizámos um teste escrito, onde podemos demonstrar o conhecimento adquirido.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fix-bottom">
+        <div class="col mx-auto text-center">
+            <a href="pra.html"><img src="icon2.png" alt="icon" width="40" height="40"></img>
+            </a>
+        </div>
+    </div>
+
+    <div class="p-1 mb-1"></div>
+
+</body>
+
+</html>
