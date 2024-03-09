@@ -39,4 +39,16 @@ html::-webkit-scrollbar-thumb {
 .img_perfil{
     border: 2px solid lightgray;
     margin-left: 70px;
+    border-radius: 10px;
+}
+
+#coluna{
+    border: 1px solid lightgray;
+    margin: 4px 4px 4px 4px;
+    border-radius: 10px;
+}
+
+#cubo{
+    border: 1px solid lightgray; 
+    border-radius: 10px; 
 }
