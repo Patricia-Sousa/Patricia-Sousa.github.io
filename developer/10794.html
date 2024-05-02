@@ -30,9 +30,62 @@
                 <p class="fs-5">Efetuar a depuração e log.</p>
                 <p class="fs-5">Programar para a web em Python.</p>
                 <p class="fs-3">Reflexão</p>
-                <p class="fs-5"></p>
-                <p class="fs-5"></p>
-                <p class="fs-5"></p>
+                <p class="fs-5">Esta UFCD vem dar continuidade à aprendizagem no desenvolvimento de software, utilizando a linguagem de programação Python. Para o efeito, implementei a minha ideia de projeto - uma aplicação desktop.</p>
+                <p class="fs-5">A aplicação To-DO, pretende ser uma aplicação para organização de listas de coisas para fazer. Neste sentido, ela tem uma base de dados [SQLite] e é através desta ligação que é feita a criação, atualização, visualização e eliminação de dados, bem como, consultas e pesquisas aos mesmos.</p>
+                <p class="fs-5">O objetivo geral da aplicação To-DO é oferecer uma ferramenta prática, leve e eficiente para a gestão de tarefas e outras categorias, que ajuda os seus utilizadores na organização, produtividade e alcance dos seus objetivos. Ela permite ao utilizador definir títulos, descrições, datas de conclusão e prioridades.</p>
+                <p class="fs-5 fw-bold">Tecnologias associadas</p>
+                <p class="fs-5 fw-bold">Visual Studio Code</p>
+                <p class="fs-5">Também conhecido como VS Code, é um editor de código gratuito e de código aberto criado pela Microsoft. Está disponível para download nos sistemas operativos Windows, macOS e Linux e existe uma versão baseada na Web à qual se pode aceder a partir de uma navegador. Foi o IDE utilizado para desenvolver o código e construir a aplicação.</p>
+                <p class="fs-5 fw-bold">Linguagem de programação Python</p>
+                <p class="fs-5">Python is an interpreted, interactive, object-oriented programming language. It incorporates modules, exceptions, dynamic typing, very high level dynamic data types, and classes. It supports multiple programming paradigms beyond object-oriented programming, such as procedural and functional programming. Python combines remarkable power with very clear syntax. It has interfaces to many system calls and libraries, as well as to various window systems, and is extensible in C or C++. It is also usable as an extension language for applications that need a programmable interface. Finally, Python is portable: it runs on many Unix variants including Linux and macOS, and on Windows. - Python Software Foundation FAQ</p>
+                <p class="fs-5 fw-bold">Instalação e configuração</p>
+                <p class="fs-5 fw-bold">Interpretador Python</p>
+                <p class="fs-5">O interpretador Python é um software crucial para executar o código escrito com a linguagem Python. Ele traduz o código escrito para a linguagem máquina, que o computador pode executar.</p>
+                <p class="fs-5 fw-bold">Ambiente Virtual</p>
+                <p class="fs-5">Um ambiente virtual é criado sobre uma instalação existente do Python, conhecido como o Python “base” do ambiente virtual, e pode, opcionalmente, ser isolado dos pacotes no ambiente base, de modo que apenas aqueles explicitamente instalados no ambiente virtual estejam disponíveis. É uma prática recomendada para o isolamento de dependências, controlo de versões, simplicidade e reutilização de código. O módulo venv oferece suporte à criação de ambientes virtuais.</p>
+                <p class="fs-5 fw-bold">Biblioteca GUI - Tkinter</p>
+                <p class="fs-5">O Tkinter é uma biblioteca built-in do Python para o desenvolvimento de interfaces gráficas de utilizador (GUI), que é multiplataforma. Com o Tkinter é possível criar aplicações com janelas, botões, menus e vários elementos visuais que são renderizados em sistemas operativos como o Windows, o macOS e o Linux.</p>
+                <p class="fs-5 fw-semibold">import tkinter</p>
+                <p class="fs-5 fw-bold">Base de Dados - SQLite</p>
+                <p class="fs-5">O SQLite é um sistema de gestão de bases de dados relacionais, que pode ser utilizado em aplicações desktop para armazenar dados locais.</p>
+                <p class="fs-5">Instalação</p>
+                <p class="fs-5 fw-semibold">pip install sqlite3</p>
+                <p class="fs-5">Importação no ficheiro .py</p>
+                <p class="fs-5 fw-semibold">import sqlite3</p>
+                <p class="fs-5">Diagrama da base de dados</p>
+                <div class="container">
+                    <img src="/img/UFCD10794_1.png" class="img-fluid" alt="Projeto"></img>
+                    <p class="fs-5">Figura 1 - Diagrama da base de dados To-DO</p>
+                    <div class="p-1 mb-1"></div>
+                </div>
+                <p class="fs-5 fw-bold">Themes - Adapta</p>
+                <p class="fs-5">Tema escolhido para desenvolver a interface de utilizador [UI].</p>
+                <p class="fs-5">Instalação</p>
+                <p class="fs-5 fw-semibold">pip install ttkthemes</p>
+                <p class="fs-5">Importação no ficheiro .py</p>
+                <p class="fs-5 fw-semibold">from ttkthemes import ThemedTk</p>
+                <div class="container">
+                    <img src="/img/UFCD10794_2.png" class="img-fluid" alt="Projeto"></img>
+                    <p class="fs-5">Figura 2 - Tema Adapta</p>
+                    <div class="p-1 mb-1"></div>
+                </div>
+                <p class="fs-5 fw-bold">Calendário</p>
+                <p class="fs-5">O calendário é aquele que permite ao utilizador escolher a data de conclusão para uma tarefa, por exemplo.</p>
+                <p class="fs-5">Instalação</p>
+                <p class="fs-5 fw-semibold">pip install tkcalendar</p>
+                <p class="fs-5">Importação no ficheiro .py</p>
+                <p class="fs-5 fw-semibold">from tkcalendar import Calendar</p>
+                <p class="fs-5 fw-bold">Implementação</p>
+                <p class="fs-5">O projeto foi iniciado pela criação da base de dados, das tabelas e das suas relações. Gradualmente, foi construída a interface de utilizador, com janelas e botões adequados à interação com a aplicação. Os dados gerais introduzidos na aplicação são visualizados na janela principal em forma de tabela de dados. As janelas secundárias permitem criar novo, atualizar a aplicação, fazer pesquisas e consultas personalizadas. As operações básicas de gestão de dados - criar, ler, atualizar e eliminar [CRUD], estão implementadas na aplicação.</p>
+                <div class="container">
+                    <img src="/img/UFCD10794_3.png" class="img-fluid" alt="Projeto"></img>
+                    <p class="fs-5">Figura 3 - Janela principal aplicação To-DO</p>
+                    <div class="p-1 mb-1"></div>
+                </div>
+                <p class="fs-5 fw-bold">Desafios</p>
+                <p class="fs-5">Durante o desenvolvimento do projeto encontrei alguns desafios, nomeadamente com o primeiro IDE que escolhi, o PyCharm, onde alguns plugins apenas estão disponíveis na versão profissional, o que me impedia de construir a aplicação. Também selecionei a biblioteca customTkinter e constatei alguns bugs no programa, em particular, nas janelas toplevel que apareciam por detrás da janela principal. Uma biblioteca que também abandonei. Durante o desenvolvimento do código encontrei outro desafio, o formato ISO da data do calendário, tem que corresponder a certas especificações. Como solução, recorri à documentação oficial do Python, através da qual me foi possível reutilizar o código padrão.</p>
+                <p class="fs-5 fw-bold">Conclusão</p>
+                <p class="fs-5">Posso concluir, que o desenvolvimento deste projeto me permitiu, adquirir competências em programação e relacionar conhecimentos. Ao construir este projeto do zero, consegui ter uma visão de todo o processo de desenvolvimento de software – formular a ideia, planear, investigar, analisar, apresentar um design, entrando na implementação e nos testes. Durante este modo de aprendizagem, consegui analisar problemas e identificar soluções, utilizei o pensamento lógico e criativo, e foi-me permitido trabalhar de forma autónoma e assumir a responsabilidade pelo meu trabalho, o que contribui para o meu crescimento enquanto profissional.</p>
             </div>
         </div>
     </div>
