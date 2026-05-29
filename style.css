@@ -157,6 +157,50 @@ body {
   color: var(--cinzento-claro);
 }
 
+.terminal-window.hidden {
+  display: none;
+}
+
+.terminal-reload-area {
+  display: none;
+  text-align: center;
+  max-width: 600px;
+}
+
+.terminal-reload-area.visible {
+  display: block;
+}
+
+.terminal-reload-area p {
+  color: var(--cinzento-claro);
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+}
+
+.terminal-reload-button {
+  padding: 0.9rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--branco);
+  font-weight: 700;
+  font-family: Consolas, "Courier New", monospace;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.terminal-reload-button:hover {
+  transform: translateY(-3px);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.terminal-reload-button:focus {
+  outline: 2px solid var(--verde-terminal);
+  outline-offset: 3px;
+}
+
 @keyframes blink {
   0%,
   50% {
