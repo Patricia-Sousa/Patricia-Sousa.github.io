@@ -1,13 +1,20 @@
 const linhasTerminal = [
-  "> iniciar_portefolio.exe",
-  "> utilizadora: Patrícia Sousa",
-  "> percurso: da curiosidade técnica à construção de soluções digitais",
-  "> áreas: Desenvolvimento Web | Programação | Sistemas de Informação",
-  "> competências: HTML | CSS | JavaScript | SQL | C# | Python",
-  "> valores: rigor técnico | criatividade | aprendizagem contínua",
-  "> sistema pronto",
-  "> entrar no portefólio",
+  "> system.boot()",
+  "> user: Patrícia Sousa",
+  "> location: Portugal | Viseu",
+  "> profile: Web Developer | Programmer | IT Systems",
+  "> stack: HTML | CSS | JavaScript | ... ",
+  "> focus: clean code, usability, learning, problem solving",
+  "> loading portfolio ...",
+  "> access granted",
 ];
+
+const terminalClose = document.querySelector("#terminal-close");
+const terminalWindow = document.querySelector(".terminal-window");
+
+terminalClose.addEventListener("click", () => {
+  terminalWindow.classList.add("terminal-window-closed");
+});
 
 const terminalOutput = document.querySelector("#terminal-output");
 const terminalActions = document.querySelector("#terminal-actions");

@@ -42,6 +42,7 @@ body {
 
 .terminal-header {
   height: 48px;
+  position: relative;
   display: flex;
   align-items: center;
   gap: 0.6rem;
@@ -50,18 +51,43 @@ body {
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-.terminal-dot {
-  width: 13px;
-  height: 13px;
-  border-radius: 50%;
-  background: var(--dourado-suave);
-  opacity: 0.85;
-}
-
 .terminal-title {
   margin-left: 1rem;
   color: var(--cinzento-claro);
   font-size: 0.95rem;
+}
+
+.terminal-close {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+  color: var(--cinzento-claro);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.terminal-close:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+.terminal-close:focus {
+  outline: 2px solid var(--verde-terminal);
+  outline-offset: 3px;
+}
+
+.terminal-window-closed {
+  display: none;
 }
 
 .terminal-body {
