@@ -1,0 +1,43 @@
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Visual Studio Code
+.vscode/
+!.vscode/extensions.json
+
+# Ficheiros temporários e backups
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Ficheiros comprimidos usados apenas para transporte/backup
+*.zip
+*.rar
+*.7z
+
+# Ficheiros de ambiente local
+.env
+.env.local
+
+# Ficheiros gerados por ferramentas, caso venham a ser usados
+.cache/
+dist/
+build/
+
+# Dependências, caso o projeto evolua para Node.js no futuro
+node_modules/
+
+# Chaves, certificados e ficheiros sensíveis
+*.pem
+*.key
+*.crt
