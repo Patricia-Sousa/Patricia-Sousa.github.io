@@ -1,7 +1,7 @@
 const linhasTerminal = [
   "> system.boot()",
   "> user: Patrícia Sousa",
-  "> location: Portugal | Viseu",
+  "> location: Portugal",
   "> profile: Web Developer | Programmer | IT Systems",
   "> stack: HTML | CSS | JavaScript | ... ",
   "> focus: clean code, usability, learning, problem solving",

@@ -1,60 +1,4 @@
 const secoes = {
-  inicio: {
-    titulo: "Laboratório digital de uma mente em evolução",
-    etiqueta: "Portefólio iniciado",
-    conteudo: `
-        <p>
-            Este portefólio é mais do que uma apresentação profissional:
-            é um <span class="highlight">laboratório digital em construção</span>,
-            onde reúno o meu percurso, as minhas competências e a minha evolução
-            nas áreas da informática, programação e desenvolvimento web.
-        </p>
-
-        <p>
-            Sou a <span class="highlight">Patrícia Sousa</span>, Técnica de Informática —
-            Sistemas e Programadora de Informática, com interesse especial pela criação
-            de soluções digitais claras, organizadas e tecnicamente consistentes.
-            O meu caminho cruza sistemas, redes, bases de dados, tecnologias web
-            e aprendizagem contínua.
-        </p>
-
-        <p>
-            Cada secção deste espaço representa uma parte do meu percurso:
-            a base técnica, os projetos, a formação, o currículo e a visão profissional
-            que continuo a desenvolver. Aqui, a tecnologia não surge apenas como ferramenta,
-            mas como linguagem de construção, resolução de problemas e evolução.
-        </p>
-
-        <div class="content-grid">
-            <div class="info-box">
-                <h3>Explorar projetos</h3>
-                <p>
-                    Conhece experiências, exercícios e soluções desenvolvidas
-                    nas áreas de programação, web, bases de dados e sistemas.
-                </p>
-            </div>
-
-            <div class="info-box">
-                <h3>Conhecer competências</h3>
-                <p>
-                    Consulta as principais áreas técnicas que estruturam
-                    o meu percurso profissional e formativo.
-                </p>
-            </div>
-        </div>
-
-        <div class="cta-group">
-            <a href="#" class="primary-button" data-link-section="projetos">
-                Ver Projetos
-            </a>
-
-            <a href="#" class="secondary-button" data-link-section="competencias">
-                Ver Competências
-            </a>
-        </div>
-    `,
-  },
-
   sobre: {
     titulo: "Sobre mim",
     etiqueta: "Identidade, percurso e evolução",
@@ -212,44 +156,6 @@ const secoes = {
         `,
   },
 
-  formacao: {
-    titulo: "Formação",
-    etiqueta: "Percurso formativo",
-    conteudo: `
-            <p>
-                Esta linha temporal apresenta uma estrutura possível para organizar o teu percurso académico
-                e profissional de forma visual e objetiva.
-            </p>
-
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-year">2007</div>
-                    <p>Conclusão do curso científico-humanístico de Ciências e Tecnologias.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2022</div>
-                    <p>Reentrada estruturada na área da informática e início de nova etapa profissional.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2023</div>
-                    <p>Conclusão do curso Técnico/a de Informática — Sistemas.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">2024</div>
-                    <p>Formação na área de Programação de Informática.</p>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-year">Atualidade</div>
-                    <p>Desenvolvimento contínuo de competências em programação, web, bases de dados e sistemas.</p>
-                </div>
-            </div>
-        `,
-  },
-
   curriculo: {
     titulo: "Currículo",
     etiqueta: "Resumo profissional",
@@ -403,6 +309,6 @@ menuToggle.addEventListener("click", () => {
   menuToggle.setAttribute("aria-expanded", String(menuAberto));
 });
 
-const secaoInicial = window.location.hash.replace("#", "") || "inicio";
+const secaoInicial = window.location.hash.replace("#", "") || "sobre";
 
 carregarSecao(secaoInicial);
