@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patrícia Sousa | Portefólio</title>
+
+    <meta
+      name="description"
+      content="Portefólio profissional de Patrícia Sousa — Desenvolvimento Web, Programação, Sistemas de Informação, Bases de Dados e Redes."
+    />
+
+    <link rel="stylesheet" href="portfolio.css" />
+    <script src="portfolio.js" defer></script>
+  </head>
+
+  <body>
+    <nav class="portfolio-nav" aria-label="Navegação principal do portefólio">
+      <a
+        href="index.html"
+        class="nav-logo"
+        aria-label="Voltar à página inicial"
+      >
+        Portefólio Patrícia Sousa
+      </a>
+
+      <button
+        type="button"
+        class="menu-toggle"
+        id="menu-toggle"
+        aria-label="Abrir ou fechar menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+    </nav>
+
+    <main class="portfolio-layout">
+      <aside class="sidebar" id="sidebar">
+        <nav class="side-menu" aria-label="Secções do portefólio">
+          <button class="menu-item active" type="button" data-section="inicio">
+            Início
+          </button>
+
+          <button class="menu-item" type="button" data-section="sobre">
+            Sobre mim
+          </button>
+
+          <button class="menu-item" type="button" data-section="projetos">
+            Projetos
+          </button>
+
+          <button class="menu-item" type="button" data-section="competencias">
+            Competências
+          </button>
+
+          <button class="menu-item" type="button" data-section="formacao">
+            Formação
+          </button>
+
+          <button class="menu-item" type="button" data-section="curriculo">
+            Currículo
+          </button>
+
+          <button class="menu-item" type="button" data-section="contacto">
+            Contacto
+          </button>
+        </nav>
+      </aside>
+
+      <div class="vertical-divider" aria-hidden="true"></div>
+
+      <section class="content-area" aria-live="polite">
+        <article class="content-card" id="content-card" tabindex="-1">
+          <!-- Conteúdo carregado por JavaScript -->
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
