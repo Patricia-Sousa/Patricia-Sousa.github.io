@@ -1,24 +1,58 @@
 const secoes = {
   inicio: {
-    titulo: "Bem-vindo ao meu portefólio",
-    etiqueta: "Sistema iniciado",
+    titulo: "Laboratório digital de uma mente em evolução",
+    etiqueta: "Portefólio iniciado",
     conteudo: `
-            <p>
-                Sou <span class="highlight">Patrícia Sousa</span> e este espaço apresenta o meu percurso,
-                as minhas competências técnicas e os projetos desenvolvidos nas áreas de
-                <span class="gold">programação, desenvolvimento web, bases de dados, redes e sistemas de informação</span>.
-            </p>
+        <p>
+            Este portefólio é mais do que uma apresentação profissional:
+            é um <span class="highlight">laboratório digital em construção</span>,
+            onde reúno o meu percurso, as minhas competências e a minha evolução
+            nas áreas da informática, programação e desenvolvimento web.
+        </p>
 
-            <p>
-                Este portefólio foi pensado como um laboratório digital: um espaço em evolução,
-                onde cada secção representa uma parte do meu caminho técnico e profissional.
-            </p>
+        <p>
+            Sou a <span class="highlight">Patrícia Sousa</span>, Técnica de Informática —
+            Sistemas e Programadora de Informática, com interesse especial pela criação
+            de soluções digitais claras, organizadas e tecnicamente consistentes.
+            O meu caminho cruza sistemas, redes, bases de dados, tecnologias web
+            e aprendizagem contínua.
+        </p>
 
-            <div class="cta-group">
-                <a href="#" class="primary-button" data-link-section="projetos">Ver Projetos</a>
-                <a href="#" class="secondary-button" data-link-section="competencias">Ver Competências</a>
+        <p>
+            Cada secção deste espaço representa uma parte do meu percurso:
+            a base técnica, os projetos, a formação, o currículo e a visão profissional
+            que continuo a desenvolver. Aqui, a tecnologia não surge apenas como ferramenta,
+            mas como linguagem de construção, resolução de problemas e evolução.
+        </p>
+
+        <div class="content-grid">
+            <div class="info-box">
+                <h3>Explorar projetos</h3>
+                <p>
+                    Conhece experiências, exercícios e soluções desenvolvidas
+                    nas áreas de programação, web, bases de dados e sistemas.
+                </p>
             </div>
-        `,
+
+            <div class="info-box">
+                <h3>Conhecer competências</h3>
+                <p>
+                    Consulta as principais áreas técnicas que estruturam
+                    o meu percurso profissional e formativo.
+                </p>
+            </div>
+        </div>
+
+        <div class="cta-group">
+            <a href="#" class="primary-button" data-link-section="projetos">
+                Ver Projetos
+            </a>
+
+            <a href="#" class="secondary-button" data-link-section="competencias">
+                Ver Competências
+            </a>
+        </div>
+    `,
   },
 
   sobre: {
