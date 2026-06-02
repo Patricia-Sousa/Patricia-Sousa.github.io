@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Cascadia";
-  src: url("./assets/fonts/CascadiaMono-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/CascadiaMono-Regular.woff2") format("woff2");
   font-weight: 200 700;
   font-style: normal;
   font-display: swap;
@@ -22,8 +22,8 @@ body {
   margin: 0;
   font-family: "Cascadia", "Courier New", monospace;
   background:
-    radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 30%),
-    linear-gradient(135deg, #001239, #020617);
+    radial-gradient(circle at top, rgba(255, 255, 255, 0.08), transparent 35%),
+    linear-gradient(135deg, #001239, #010c3c);
   color: var(--branco);
   min-height: 100vh;
 }

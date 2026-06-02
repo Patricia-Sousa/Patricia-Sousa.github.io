@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Cascadia";
-  src: url("./assets/fonts/CascadiaMono-Regular.woff2") format("woff2");
+  src: url("../assets/fonts/CascadiaMono-Regular.woff2") format("woff2");
   font-weight: 200 700;
   font-style: normal;
   font-display: swap;
@@ -38,7 +38,7 @@ body {
       rgba(214, 179, 106, 0.08),
       transparent 30%
     ),
-    linear-gradient(135deg, var(--azul-profundo), #020617);
+    linear-gradient(135deg, var(--azul-profundo), #010c3c);
   color: var(--branco);
 }
 
@@ -281,7 +281,7 @@ body {
   padding: 0.55rem 0.85rem;
   border: 1px solid rgba(124, 255, 178, 0.35);
   border-radius: 999px;
-  color: var(--verde-terminal);
+  color: var(--branco);
   background: rgba(124, 255, 178, 0.08);
   font-size: 0.9rem;
 }
