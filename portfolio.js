@@ -5,16 +5,15 @@ const secoes = {
     conteudo: `
         <p>
             Sou a <span class="highlight">Patrícia Sousa</span>, Técnica de Informática — Sistemas
-            e Programadora de Informática, com interesse especial pelo desenvolvimento web,
+            e Programadora, com interesse especial pelo desenvolvimento web,
             programação, bases de dados, redes e sistemas de informação.
         </p>
 
         <p>
-            O meu percurso é marcado pela aprendizagem contínua, pela organização e pela vontade
+            O meu percurso é marcado pela aprendizagem progressiva, pela organização e pela vontade
             de compreender a tecnologia de forma rigorosa e aplicada. Ao longo dos últimos anos,
             consolidei competências técnicas em informática, programação e desenvolvimento de
-            soluções digitais, construindo uma identidade profissional orientada para o método,
-            a clareza e a evolução tecnológica.
+            soluções digitais, o que me permitiu construir uma identidade profissional sólida.
         </p>
 
         <div class="content-grid">
@@ -30,7 +29,7 @@ const secoes = {
                 <h3>Forma de trabalho</h3>
                 <p>
                     Organização, responsabilidade, rigor técnico, atenção ao detalhe
-                    e aprendizagem contínua.
+                    e aprendizagem consciente.
                 </p>
             </div>
         </div>
@@ -43,8 +42,8 @@ const secoes = {
             <h2>Autobiografia</h2>
 
             <p>
-                Chamo-me Patrícia Sousa e nasci na cidade de Viseu. O meu percurso pessoal
-                e profissional foi sendo construído através de diferentes experiências,
+                Chamo-me Patrícia e nasci na cidade de Viseu. O meu percurso pessoal
+                e profissional tem sido construído através de diferentes experiências,
                 aprendizagens e decisões importantes, que contribuíram para a pessoa e
                 profissional que sou atualmente.
             </p>
@@ -66,7 +65,7 @@ const secoes = {
 
             <p>
                 Hoje, vejo a tecnologia como um espaço de construção, resolução de problemas
-                e evolução contínua. O meu objetivo é continuar a desenvolver competências,
+                e evolução. O meu objetivo é continuar a desenvolver competências,
                 criar projetos sólidos e aplicar o conhecimento técnico de forma clara,
                 útil e profissional.
             </p>
@@ -128,8 +127,8 @@ const secoes = {
 
             <h2>Desenvolvimento Web</h2>
             <div class="tag-list">
-                <span class="tag">HTML5</span>
-                <span class="tag">CSS3</span>
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
                 <span class="tag">JavaScript</span>
                 <span class="tag">Bootstrap</span>
                 <span class="tag">Responsividade</span>

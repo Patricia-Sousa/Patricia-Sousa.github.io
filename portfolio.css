@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Cascadia";
+  src: url("./assets/fonts/CascadiaMono-Regular.woff2") format("woff2");
+  font-weight: 200 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --azul-profundo: #001239;
   --azul-terminal: #020b1f;
@@ -18,7 +26,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: Consolas, "Courier New", monospace;
+  font-family: "Cascadia", "Courier New", monospace;
   background:
     radial-gradient(
       circle at top left,
@@ -318,7 +326,7 @@ body {
   border-radius: 999px;
   background: rgba(124, 255, 178, 0.08);
   color: var(--verde-terminal);
-  font-family: Consolas, "Courier New", monospace;
+  font-family: "Cascadia Mono", "Courier New", monospace;
   font-weight: 700;
   cursor: pointer;
   transition:
