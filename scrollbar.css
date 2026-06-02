@@ -1,0 +1,41 @@
+:root {
+  --azul-profundo: #001239;
+  --azul-terminal: #020b1f;
+  --branco: #ffffff;
+  --verde-terminal: #7cffb2;
+  --cinzento-claro: #d6d9e6;
+  --dourado-suave: #d6b36a;
+  --linha: rgba(255, 255, 255, 0.16);
+}
+
+/* SCROLLBAR — CHROME, EDGE, SAFARI */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--azul-terminal);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--verde-terminal);
+  border: 3px solid var(--azul-terminal);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--dourado-suave);
+}
+
+::-webkit-scrollbar-corner {
+  background: var(--azul-terminal);
+}
+
+/* SCROLLBAR — FIREFOX */
+
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--verde-terminal) var(--azul-terminal);
+}

@@ -73,56 +73,12 @@ const secoes = {
     `,
   },
 
-  projetos: {
-    titulo: "Projetos",
-    etiqueta: "Laboratório digital",
-    conteudo: `
-            <p>
-                Esta secção pode apresentar projetos académicos, técnicos e pessoais. O objetivo é mostrar
-                não só o resultado final, mas também o problema, a solução, as tecnologias utilizadas e a lógica
-                de desenvolvimento.
-            </p>
-
-            <div class="content-grid">
-                <div class="info-box">
-                    <h3>Portefólio pessoal</h3>
-                    <p>
-                        Website desenvolvido em HTML, CSS e JavaScript para apresentação profissional,
-                        percurso formativo e competências técnicas.
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>Projetos Web</h3>
-                    <p>
-                        Páginas responsivas, interfaces interativas, formulários, layouts modernos
-                        e experiências de navegação.
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>Bases de Dados</h3>
-                    <p>
-                        Modelação de dados, consultas SQL, tabelas relacionais, formulários e relatórios.
-                    </p>
-                </div>
-
-                <div class="info-box">
-                    <h3>Redes e Sistemas</h3>
-                    <p>
-                        Configuração de redes locais, endereçamento IP, serviços de rede e administração básica.
-                    </p>
-                </div>
-            </div>
-        `,
-  },
-
   competencias: {
     titulo: "Competências técnicas",
     etiqueta: "Stack tecnológico",
     conteudo: `
             <p>
-                As competências podem ser apresentadas por áreas, facilitando a leitura do perfil técnico.
+                O meu stack tecnológico reúne linguagens, ferramentas, bases de dados e ambientes que utilizo para compreender problemas, estruturar soluções e desenvolver projetos sólidos.
             </p>
 
             <h2>Desenvolvimento Web</h2>
@@ -152,6 +108,18 @@ const secoes = {
                 <span class="tag">DNS</span>
                 <span class="tag">Endereçamento IP</span>
             </div>
+
+            <h2>Ferramentas de Desenvolvimento</h2>
+            <div class="tag-list">
+                <span class="tag">Visual Studio Code</span>
+                <span class="tag">Git</span>
+                <span class="tag">GitHub</span>
+                <span class="tag">GitHub Pages</span>
+                <span class="tag">Terminal</span>
+                <span class="tag">DevTools</span>
+                <span class="tag">Debugging</span>
+                <span class="tag">Controlo de Versões</span>
+            </div>
         `,
   },
 
@@ -160,8 +128,7 @@ const secoes = {
     etiqueta: "Resumo profissional",
     conteudo: `
             <p>
-                Nesta secção podes integrar uma versão HTML do teu currículo, em vez de depender apenas
-                de imagens ou PDF. Isso torna o conteúdo mais acessível, pesquisável e profissional.
+                Entre linhas de código, sistemas e uma aprendizagem curiosa.
             </p>
 
             <div class="content-grid">
@@ -183,7 +150,7 @@ const secoes = {
             </div>
 
             <div class="cta-group">
-                <a href="curriculo.html" class="primary-button">Abrir página de Currículo</a>
+                <a href="curriculo.html" class="primary-button">Abrir página do CV</a>
                 <a
                     href="assets/docs/CV_PatriciaSousa.pdf"
                     class="secondary-button"
@@ -199,30 +166,96 @@ const secoes = {
     etiqueta: "Ligação profissional",
     conteudo: `
             <p>
-                Esta secção pode incluir email profissional, GitHub, LinkedIn e outras formas de contacto.
+                Encontra-me entre código, projetos e presença digital.
             </p>
 
-            <div class="content-grid">
-                <div class="info-box">
-                    <h3>Email</h3>
-                    <p>Adiciona aqui o teu email profissional.</p>
+            <div class="contact-panel">
+            <article class="contact-card contact-card-featured">
+                <div class="contact-card-header">
+                    <span class="contact-icon">@</span>
+                    <div>
+                        <h3>Email</h3>
+                        <p>Contacto direto</p>
+                    </div>
                 </div>
 
-                <div class="info-box">
-                    <h3>GitHub</h3>
-                    <p>Adiciona aqui a ligação para o teu perfil GitHub.</p>
+                <a
+                    class="contact-value"
+                    href="https://mail.google.com/mail/?view=cm&fs=1&to=tixaisabelsousa@gmail.com&su=Contacto%20atrav%C3%A9s%20do%20portef%C3%B3lio"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    tixaisabelsousa@gmail.com
+                </a>
+
+                <div class="contact-actions">
+                    <a
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=tixaisabelsousa@gmail.com&su=Contacto%20atrav%C3%A9s%20do%20portef%C3%B3lio"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-button">
+                        Abrir Gmail
+                    </a>
+
+                    <button
+                        type="button"
+                        class="contact-button contact-button-secondary"
+                        id="copy-email-button"
+                        data-email="tixaisabelsousa@gmail.com">
+                        Copiar email
+                    </button>
                 </div>
 
-                <div class="info-box">
-                    <h3>LinkedIn</h3>
-                    <p>Adiciona aqui a ligação para o teu LinkedIn.</p>
+                <p class="copy-message" id="copy-message"></p>
+            </article>
+
+            <article class="contact-card">
+                <div class="contact-card-header">
+                    <span class="contact-icon">GH</span>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p>Repositórios e projetos</p>
+                    </div>
                 </div>
 
-                <div class="info-box">
-                    <h3>Localização</h3>
-                    <p>Viseu, Portugal.</p>
+                <a
+                    class="contact-value"
+                    href="https://github.com/Patricia-Sousa"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    github.com/Patricia-Sousa
+                </a>
+            </article>
+
+            <article class="contact-card">
+                <div class="contact-card-header">
+                    <span class="contact-icon">IG</span>
+                    <div>
+                        <h3>Instagram</h3>
+                        <p>Presença digital</p>
+                    </div>
                 </div>
-            </div>
+
+                <a
+                    class="contact-value"
+                    href="https://www.instagram.com/patricia.isabel.sousa/"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    @patricia.isabel.sousa
+                </a>
+            </article>
+
+            <article class="contact-card">
+                <div class="contact-card-header">
+                    <span class="contact-icon">PT</span>
+                    <div>
+                        <h3>Localização</h3>
+                        <p>Base geográfica</p>
+                    </div>
+                </div>
+
+                <p class="contact-value">Viseu, Portugal</p>
+            </article>
+        </div>
         `,
   },
 };
@@ -247,6 +280,27 @@ function ativarAutobiografia() {
       botaoAutobiografia.textContent = "Ler autobiografia completa";
     } else {
       botaoAutobiografia.textContent = "Ocultar autobiografia";
+    }
+  });
+}
+
+function ativarCopiaEmail() {
+  const copyEmailButton = document.querySelector("#copy-email-button");
+  const copyMessage = document.querySelector("#copy-message");
+
+  if (!copyEmailButton || !copyMessage) {
+    return;
+  }
+
+  copyEmailButton.addEventListener("click", async () => {
+    const email = copyEmailButton.dataset.email;
+
+    try {
+      await navigator.clipboard.writeText(email);
+      copyMessage.textContent = "Email copiado para a área de transferência.";
+    } catch (error) {
+      copyMessage.textContent =
+        "Não foi possível copiar automaticamente. Email: " + email;
     }
   });
 }
@@ -311,3 +365,6 @@ menuToggle.addEventListener("click", () => {
 const secaoInicial = window.location.hash.replace("#", "") || "sobre";
 
 carregarSecao(secaoInicial);
+ativarLinksInternos();
+ativarAutobiografia();
+ativarCopiaEmail();
