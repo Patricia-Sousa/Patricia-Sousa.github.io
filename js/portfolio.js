@@ -335,6 +335,7 @@ function carregarSecao(nomeSecao) {
 
   ativarLinksInternos();
   ativarAutobiografia();
+  ativarCopiaEmail();
 }
 
 function ativarLinksInternos() {
@@ -365,6 +366,3 @@ menuToggle.addEventListener("click", () => {
 const secaoInicial = window.location.hash.replace("#", "") || "sobre";
 
 carregarSecao(secaoInicial);
-ativarLinksInternos();
-ativarAutobiografia();
-ativarCopiaEmail();
