@@ -152,7 +152,7 @@ const secoes = {
             <div class="cta-group">
                 <a href="curriculo.html" class="primary-button">Abrir página do CV</a>
                 <a
-                    href="assets/docs/CV_PatríciaSousa.pdf"
+                    href="../assets/docs/CV_PatríciaSousa.pdf"
                     class="secondary-button"
                     download="CV_PatríciaSousa.pdf">
                     Download do CV em PDF
