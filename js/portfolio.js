@@ -326,12 +326,19 @@ function carregarSecao(nomeSecao) {
 
   history.replaceState(null, "", `#${nomeSecao}`);
 
-  contentCard.focus();
-
   if (window.innerWidth <= 900) {
     sidebar.classList.remove("open");
     menuToggle.setAttribute("aria-expanded", "false");
   }
+
+  contentCard.focus({ preventScroll: true });
+
+  window.scrollTo({
+    top: 0,
+    behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches
+      ? "auto"
+      : "smooth",
+  });
 
   ativarLinksInternos();
   ativarAutobiografia();
@@ -363,6 +370,14 @@ menuToggle.addEventListener("click", () => {
   menuToggle.setAttribute("aria-expanded", String(menuAberto));
 });
 
-const secaoInicial = window.location.hash.replace("#", "") || "sobre";
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 900) {
+    sidebar.classList.remove("open");
+    menuToggle.setAttribute("aria-expanded", "false");
+  }
+});
+
+const hashInicial = window.location.hash.replace("#", "");
+const secaoInicial = secoes[hashInicial] ? hashInicial : "sobre";
 
 carregarSecao(secaoInicial);
