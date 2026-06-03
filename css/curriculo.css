@@ -458,18 +458,51 @@ body {
 }
 
 @media (max-width: 700px) {
-  .cv-page {
-    padding: 1rem;
+  .cv-nav {
+    gap: 1rem;
   }
 
-  .cv-nav {
-    padding: 1rem;
-    align-items: flex-start;
+  .nav-links {
+    width: 100%;
+    gap: 0.75rem;
+  }
+
+  .cv-hero {
+    border-radius: 20px;
+  }
+
+  .cv-hero h1 {
+    font-size: clamp(1.8rem, 10vw, 2.8rem);
+  }
+
+  .cv-subtitle,
+  .cv-card p,
+  .cv-card li,
+  .contact-list a,
+  .tag {
+    overflow-wrap: anywhere;
+  }
+
+  .cv-actions {
     flex-direction: column;
   }
 
-  .content-grid {
-    grid-template-columns: 1fr;
+  .primary-button,
+  .secondary-button,
+  .ghost-button,
+  .filter-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .timeline,
+  .experience-list {
+    padding-left: 1.2rem;
+  }
+
+  .timeline-item::before,
+  .experience-item::before {
+    left: -1.55rem;
   }
 }
 

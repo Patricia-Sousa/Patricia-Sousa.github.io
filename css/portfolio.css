@@ -578,12 +578,50 @@ a.contact-value:hover {
 
 @media (max-width: 600px) {
   .portfolio-nav {
-    padding: 0 1rem;
+    min-height: 72px;
+    height: auto;
+    gap: 1rem;
+  }
+
+  .nav-logo {
+    max-width: calc(100% - 56px);
+    overflow-wrap: anywhere;
+  }
+
+  .content-area {
+    padding: 0.75rem;
   }
 
   .content-card {
-    border-radius: 18px;
-    min-height: auto;
+    padding: 1rem;
+    border-radius: 16px;
+  }
+
+  .content-card h1 {
+    font-size: clamp(1.7rem, 10vw, 2.4rem);
+  }
+
+  .content-card p,
+  .content-card li,
+  .info-box,
+  .tag,
+  .contact-value {
+    overflow-wrap: anywhere;
+  }
+
+  .cta-group {
+    flex-direction: column;
+  }
+
+  .primary-button,
+  .secondary-button,
+  .read-more-button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-item:hover {
+    transform: none;
   }
 }
 
