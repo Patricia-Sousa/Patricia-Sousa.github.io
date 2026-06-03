@@ -21,12 +21,16 @@ function filtrarCurriculo(filtroSelecionado) {
   });
 }
 
-filterButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    filtrarCurriculo(button.dataset.filter);
+if (filterButtons.length > 0 && cvCards.length > 0) {
+  filterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      filtrarCurriculo(button.dataset.filter);
+    });
   });
-});
+}
 
-printButton.addEventListener("click", () => {
-  window.print();
-});
+if (printButton) {
+  printButton.addEventListener("click", () => {
+    window.print();
+  });
+}
